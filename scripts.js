@@ -60,7 +60,7 @@ function evaluateGame() {
 			showMessage("xWins");
 			displayingMessage += "xWins";
 			resetGame(); // with unfreeze grid function included  
-        } else if (rowsSum == -3 || colsSum == -3 || firstDiagSum == -3 || secondDiagSum == -3) {
+		} else if (rowsSum == -3 || colsSum == -3 || firstDiagSum == -3 || secondDiagSum == -3) {
 			showMessage("oWins");
 			displayingMessage += "oWins";
 			resetGame();
@@ -86,8 +86,8 @@ function freezeGrid() { // prevents user from adding values to the grid after en
 		for(let j = 0; j < 3; ++j) {
 			let currentID = i.toString() + j.toString(); // used toString() to convert integer to string
 			document.getElementById(currentID).removeAttribute("onclick"); // used removeAtrributes() to remove onclick
+		}
     	}
-    }
 }
 
 function unfreezeGrid() { // sets up the grid for the next game round
