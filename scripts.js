@@ -81,7 +81,7 @@ function resetGame() {
 	counter = 0;
 }
 
-function freezeGrid() {
+function freezeGrid() { // prevents user from adding values to the grid after end game
 	for(let i = 0; i < 3; ++i) {
 		for(let j = 0; j < 3; ++j) {
 			let currentID = i.toString() + j.toString(); // used toString() to convert integer to string
@@ -90,7 +90,7 @@ function freezeGrid() {
     }
 }
 
-function unfreezeGrid() {
+function unfreezeGrid() { // sets up the grid for the next game round
 	document.getElementById("playAgain").hidden = true;
 	hideElement(displayingMessage);
 	for(let i = 0; i < 3; ++i) {
