@@ -51,7 +51,7 @@ function evaluateGame() {
 				rowsSum = currentRowSum;
 				break;
 			} else if (currentColSum == 3 || currentColSum == -3) {
-				colsSum = currentRowSum;
+				colsSum = currentColSum;
 				break;
 			}
 		}
